@@ -1,0 +1,405 @@
+/* CSS RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 1px 23px -15px rgba(0,0,0,0.75);
+}
+
+.pageLogo h2 {
+    color: #000000;
+    font-weight: 200;
+}
+
+.pageLinks {
+    color: #000000;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 30px;
+}
+
+.pageLinks input {
+    border: none;
+    width: 199px;
+    padding: 0px 15px;
+    border-bottom: 1px solid #000000;
+}
+
+.pageLinks input::placeholder {
+    color: #000000;
+}
+
+/* BANNER */
+.banner {
+    background-image: url(../public/assets/images/pageBanner.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+.welcomeTexts {
+    padding-top: 40vh;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.welcomeTexts h1 {
+    font-weight: 400;
+    font-size: 66px;
+    margin-bottom: 30px;
+    line-height: 70px;
+    color: #ffffff;
+    width: 420px;
+}
+
+.welcomeTexts p {
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 25px;
+    color: #ffffff;
+    width: 420px;
+    margin-bottom: 30px;
+}
+
+.socialMedia {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.socialMedia img {
+    width: 22px;
+}
+
+/* POSTS */
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 1280px;
+    margin: 0 auto;
+    margin-top: -110px;
+    margin-bottom: 100px;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 23px -15px rgba(0,0,0,0.75);
+}
+
+.postItem {
+    width: 580px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.postDetailButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.postDetailButton p {
+    font-weight: 100;
+    font-size: 12px;
+    color: #838383;
+}
+
+.postDetailButton button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.postText {
+    margin-bottom: 50px;
+}
+
+.postText h2 {
+    color: #000000;
+    font-weight: 200;
+}
+
+.postText p {
+    color: #5f5f5f;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.form-group {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 199px;
+    padding: 10px 15px;
+    background-color: none;
+}
+
+.form-group input::placeholder {
+    color: #000000;
+}
+
+.inputs {
+    display: flex;
+    gap: 20px;
+}
+
+.form-group button {
+    background-color: #f9f9f9;
+    border: none;
+    color: #404040;
+}
+
+/* POST DETAIL */
+.detailTexts {
+    width: 1280px;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 250px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 23px -15px rgba(0,0,0,0.75);
+}
+
+.detailTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailTitle h1 {
+    font-weight: 200;
+}
+
+.detailTitle button {
+    background-color: #f9f9f9;
+    border: none;
+    color: #404040;
+    padding: 12px 10px;
+}
+
+.detailTexts p {
+    font-weight: 100;
+    color: #5b5b5b;
+    margin-bottom: 50px;
+
+}
+
+.commentSection {
+    width: 1280px;
+    padding: 40px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 23px -15px rgba(0,0,0,0.75);
+}
+
+.addNewComment {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.addNewComment input {
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 199px;
+    padding: 10px 15px;
+    background-color: none;
+}
+
+.addNewComment input::placeholder {
+    color: #000000;
+}
+
+.addNewComment button {
+    background-color: #f9f9f9;
+    border: none;
+    color: #404040;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comment {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.comment p {
+    width: 800px;
+}
+
+.comment button {
+    background-color: #f9f9f9;
+    border: none;
+    color: #404040;
+}
+
+.likeDislike {
+    display: flex;
+    gap: 10px;
+}
+
+.likeDislike button {
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+
+.bannerBottom {
+    display: none;
+}
+
+@media (width < 1280px) {
+    .pageLinks {
+        display: none;
+    }
+
+    .welcomeTexts {
+        display: none;
+    }
+
+    .banner {
+        background-size: auto 500px;
+        background-position: 80%;
+        height: 50vh;
+    }
+
+    .posts {
+        margin-top: 0px;
+        
+    }
+
+    .bannerBottom {
+        display: block;
+        background-color: #333f33;
+        padding: 15px;
+        height: 50vh;
+    }
+
+    .bannerBottom h1 {
+        color: #ffffff;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+
+    .bannerBottom p {
+        color: #f9f9f9;
+        margin-bottom: 30px;
+    }
+
+    .posts { 
+        margin-top: 40px;
+        gap: 20px;
+        width: 400px;
+        padding: 40px 20px;
+    }
+    
+    .postItem {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .form-group {
+        width: 1200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .form-group input {
+        border: none;
+        border-bottom: 1px solid #000000;
+        width: 360px;
+        padding: 10px 15px;
+        background-color: none;
+    }
+    
+    .form-group input::placeholder {
+        color: #000000;
+    }
+    
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .form-group button {
+        margin-top: 20px;
+        padding: 10px 20px;
+    }
+
+    .detailTexts {
+        width: 400px;
+        padding: 40px;
+        margin-top: 150px;
+    }
+
+    .commentSection {
+        width: 400px;
+        margin-bottom: 40px;
+    }
+
+    .comment {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .likeDislike img {
+        width: 20px;
+    }
+    
+    .comment p {
+        width: 300px;
+    }
+}
